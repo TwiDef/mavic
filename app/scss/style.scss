@@ -2,6 +2,23 @@
 @import "libs";
 @import "fonts";
 @import "global";
-@import "media";
 
-/* 2:16:40 */
+/* ############################# */
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 30px;
+    right: 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 30px;
+    }
+}
+
+
+/* ############################# */
+
+@import "media";
