@@ -49,13 +49,11 @@ body {
 }
 
 .page-section {
-    min-height: 100vh;
-    background-image: url('./../images/page-bg.jpg');
+    background-image: url('./../images/page-bgh.jpg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     position: relative;
-    padding: 74px 0 50px;
     &::before {
         content: '';
         left: 0;
@@ -67,6 +65,8 @@ body {
         opacity: 0.15;
     }
     &__wrapper {
+        min-height: 100vh;
+        padding: 74px 0 50px;
         position: relative;
         z-index: 1;
     }
@@ -78,6 +78,7 @@ body {
     line-height: 53px;
     padding-left: 25px;
     margin-bottom: 55px;
+    padding-top: 200px;
 }
 
 .scroll__btn {
