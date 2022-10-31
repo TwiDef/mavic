@@ -128,6 +128,15 @@
     }
     &__slider {
         max-width: 560px;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 560px;
+            height: 276px;
+            border: 4px solid #fff;
+            top: -15px;
+            right: -17px;
+        }
     }
 }
 
@@ -151,6 +160,56 @@
         svg {
             stroke: #fff;
         }
+    }
+}
+
+.benefits {
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        margin-bottom: 100px;
+        display: flex;
+        align-items: flex-end;
+        &:nth-child(even) {
+            //margin-bottom: 16px;
+        }
+    }
+    &__num {
+        font-size: 36px;
+        line-height: 41px;
+        @extend %ubuntu-bold;
+        margin-right: 10px;
+    }
+    &__img {
+        position: relative;
+        margin-right: 32px;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 193px;
+            height: 128px;
+            border: 2px solid #fff;
+            top: -12px;
+            right: -12px;
+            z-index: -1;
+        }
+    }
+    &__info {
+        width: 300px;
+    }
+    &__info-title {
+        font-size: 21px;
+        line-height: 24px;
+        width: 123px;
+        @extend %ubuntu-bold;
+        margin-bottom: 10px;
+    }
+    &__info-text {
+        font-size: 15px;
+        line-height: 18px;
     }
 }
 
