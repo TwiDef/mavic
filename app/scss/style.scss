@@ -131,6 +131,29 @@
     }
 }
 
+.slider-btn {
+    padding: 16px 26px;
+    border: none;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    z-index: 5;
+    bottom: -47px;
+    svg {
+        stroke: #1C1C1C;
+    }
+    &__left {
+        right: 60px;
+    }
+    &.slick-disabled {
+        background-color: #1C1C1C;
+        svg {
+            stroke: #fff;
+        }
+    }
+}
+
 
 /* 1:31:30 */
 
