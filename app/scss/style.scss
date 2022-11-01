@@ -167,14 +167,51 @@
     &__items {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        padding-left: 25px;
     }
     &__item {
         margin-bottom: 100px;
         display: flex;
         align-items: flex-end;
         &:nth-child(even) {
-            //margin-bottom: 16px;
+            margin-left: 48px;
+            transform: translateY(25px);
+        }
+    }
+    &__item-1,
+    &__item-3 {
+        position: relative;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+        }
+    }
+    &__item-1 {
+        &::before {
+            height: 48px;
+            width: 245px;
+            background-image: url('../images/benefits/line-1.svg');
+            right: -56px;
+            top: 31px;
+        }
+    }
+    &__item-3 {
+        &::before {
+            background-image: url('../images/benefits/line-3.svg');
+            width: 254px;
+            height: 42px;
+            top: 41px;
+            right: -70px;
+        }
+        &::after {
+            background-image: url('../images/benefits/line-2.svg');
+            width: 463px;
+            height: 62px;
+            top: -70px;
+            right: -54px;
         }
     }
     &__num {
@@ -214,7 +251,7 @@
 }
 
 
-/* 1:31:30 */
+/* 2:35:30 */
 
 
 /* ############################# */
