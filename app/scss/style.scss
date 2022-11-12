@@ -50,6 +50,9 @@
         &+.menu__list-item {
             padding-left: 20px;
         }
+        &.active a {
+            color: rgb(238, 151, 59);
+        }
     }
     &__list-phone {
         display: none;
